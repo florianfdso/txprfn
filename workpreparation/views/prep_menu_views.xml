@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <menuitem
+        id="prep_menu_root"
+        name="Workpreparation"
+        web_icon="crm,static/description/icon.png"
+        sequence="25"/>
+
+    <!-- SALES (MAIN USER MENU) -->
+    <menuitem
+        id="prep_menu_base"
+        name="Base"
+        parent="prep_menu_root"
+        sequence="1"/>
+    <menuitem
+        id="prep_crm_products"
+        name="Products"
+        parent="prep_menu_base"
+        action="prep_model_action"
+        sequence="1"/>
+</odoo>
