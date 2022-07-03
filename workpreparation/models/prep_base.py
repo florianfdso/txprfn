@@ -11,4 +11,4 @@ class PrepModel(models.Model):
     description = fields.Char()
     product_id = fields.Many2one("product.template", string="Product")
     bom_id = fields.Many2one("product.bom", string="BOM")
-    drawing_pdf = fields.Many('ir.attachment', string="Drawing")
+    drawing_pdf = fields.Many2many('ir.attachment', string="Drawing")
