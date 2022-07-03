@@ -15,5 +15,6 @@
         <field name="name">Product Name</field>
         <field name="res_model">prep.product</field>
         <field name="view_mode">tree,form</field>
+        <field name="drawing" widget="many2many_binary"/>
     </record>
 </odoo>
