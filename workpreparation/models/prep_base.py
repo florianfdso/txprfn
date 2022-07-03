@@ -10,4 +10,4 @@ class PrepModel(models.Model):
     name = fields.Char()
     description = fields.Char()
     product_id = fields.Many2one("product.template", string="Product")
-    drawing_pdf = fields.Many2many('ir.attachment', string="Drawing")
+    drawing_pdf = fields.Binary('ir.attachment', string="Drawing")
